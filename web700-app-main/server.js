@@ -1,12 +1,12 @@
 /*********************************************************************************
-* WEB700 – Assignment 04
+* WEB700 – Assignment 05
 * I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
 * of this assignment has been copied manually or electronically from any other source
 * (including 3rd party web sites) or distributed to other students.
 *
-* Name: Saroj Niraula Student ID: 154184238 Date: 07/16/2024
+* Name: Himanshu Parmar Student ID: 149608235 Date: 07/26/2024
 *
-* Online (Vercel) Link: https://web700-app.vercel.app/
+* Online (Vercel) Link: 
 *
 ********************************************************************************/
 
@@ -16,8 +16,7 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 var app = express();
 
-// This will tell our server that any file with the “.hbs” 
-// extension (instead of “.html”) will use the handlebars “engine” (template engine).
+
 app.engine('.hbs', exphbs.engine({ 
     extname: '.hbs',
     helpers: {
@@ -57,23 +56,23 @@ app.use(function(req,res,next){
    });
 
 app.get("/", (req, res) => {
-    // res.sendFile(path.join(__dirname, 'views', 'home.html'));
+    
     res.render('home');
 });
 
 app.get("/about", (req, res) => {
-    // res.sendFile(path.join(__dirname, 'views', 'about.html'));
+    
     res.render('about');
 });
 
 app.get("/htmlDemo", (req, res) => {
-    // res.sendFile(path.join(__dirname, 'views', 'htmlDemo.html'));
+    
     res.render('htmlDemo');
 });
 
 app.get('/students/add', (req, res) => {
     res.render('addStudent');
-    // res.sendFile(path.join(__dirname, 'views', 'addStudent.html'));
+    
 });
 
 app.post('/students/add', (req, res) => {

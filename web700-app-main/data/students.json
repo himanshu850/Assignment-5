@@ -3118,5 +3118,17 @@
     "TA": false,
     "status": "Part Time",
     "course": 5
+  },
+  {
+    "firstName": "Himanshu",
+    "lastName": "Parmar",
+    "email": "himanshupparmar824@gmail.com",
+    "addressStreet": "8 Albacore Crescent",
+    "addressCity": "Scarborough",
+    "addressProvince": "ON",
+    "status": "Full Time",
+    "course": "1",
+    "TA": false,
+    "studentNum": 261
   }
 ]
